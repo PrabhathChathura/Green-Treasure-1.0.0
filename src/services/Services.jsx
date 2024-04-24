@@ -2,33 +2,30 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import {motion} from 'framer-motion';
 import "./services.css";
-
+import serviceData from "../assets/data/serviceData";
 
 const Services = () => {
   return (
-  <section className="services">
-    <Container>
-      <Row>
-        <Col lg="3" md="4">
-            <div className="service__item">
+    <section className="services">
+      <Container>
+        <Row>
+          {serviceData.map((item, index) => (
+            <Col lg="3" md="4" key={index}>
+              <motion.div whileHover={{ scale: 1.1 }} 
+              className="service__item" style={{ background: item.bg }}>
                 <span>
-                  <i class="ri-truck-line"></i>
+                  <i className={item.icon}></i>
                 </span>
                 <div>
-                    <h3>Free Shipping</h3>
-                    <p>Get your product</p>
-
+                  <h3>{item.title}</h3>
+                  <p>{item.subtitle}</p>
                 </div>
-
-
-            </div>
-          
-        </Col>
-      </Row>
-    </Container>
-  </section> 
-  
-  
- ); };
+              </motion.div>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </section>
+  );};
 
 export default Services;
