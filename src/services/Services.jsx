@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import {motion} from 'framer-motion';
-import "./services.css";
+import { motion } from 'framer-motion';
 import serviceData from "../assets/data/serviceData";
+import "./services.css"; // Importing the CSS file for Services component
 
 const Services = () => {
   return (
@@ -26,6 +26,7 @@ const Services = () => {
         </Row>
       </Container>
     </section>
-  );};
+  );
+};
 
 export default Services;

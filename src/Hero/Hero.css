@@ -1,0 +1,45 @@
+.hero-left p {
+    margin: 1rem 0;
+}
+
+.hero-right p {
+    margin: 1rem 0;
+}
+
+
+.hero_stats{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-top: 3rem;
+    width: 60%;
+
+}
+
+.stat_box {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.stat_box>span:first-child {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+}
+
+.stat_box span p {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    display: inline-block;
+    
+}
+
+.stat_box > span:last-child {
+    color: var(--primary-color);
+    font-size: .88rem;
+    font-weight: 500;
+   
+}
+

@@ -12,53 +12,64 @@ import heroImg from '../assets/images/hero-img.png'
 
 import Services from "../services/Services";
 
+import Hero from "../Hero/Hero";
+
 import "../styles/home.css";
+
+import ProductsList from "../components/UI/ProductsList";
 
 
 const Home = () => {
   const year = new Date().getFullYear()
-  return (<Helmet title={'Home'}> 
-  <section className="hero__section">
-    <Container>
-      <Row>
-        <Col lg="6" md="6">  
-        <div className="hero__content">
-          <p className="hero__subtitle"> Trending product in {year}</p>
+  return (
+    <Helmet title={'Home'}>
+      <section className="hero__section">
+        <Container>
+          <Row>
+            <Col lg="6" md="6">
+              <div className="hero__content">
+                <p className="hero__subtitle"> Trending product in {year}</p>
 
-          <h2>Make Your Interior More Minamalist & Modern </h2>
+                <h2>Make Your Interior More Minamalist & Modern </h2>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem 
-            ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor
-             sit amet, consectetur adipiscing elit</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem 
+                  ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor
+                  sit amet, consectetur adipiscing elit</p>
 
-          <motion.button whileTap={{ scale: 1.2 }} 
-          className="buy__btn"> 
-          <Link to="/shop">SHOP NOW</Link> 
-          </motion.button>
+                <motion.button whileTap={{ scale: 1.2 }} className="buy__btn">
+                  <Link to="/shop">SHOP NOW</Link>
+                </motion.button>
+              </div>
+            </Col>
 
+            <Col lg="6" md="6">
+              <div className="hero__img">
+                <img src={heroImg} alt="hero" style={{ width: '100%', height: 'auto', maxWidth: '100%' }} />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
 
-        </div>
+      <Services />
 
-      </Col>
+      <Hero />
 
-      <Col lg="6" md="6">
-        <div className="hero__img">
-          <img src={heroImg} alt="hero" />
-        </div>  
-      </Col>
-      </Row>
-    </Container>
-</section>
+      
+      <section className="our_services">
+        <Container>
+          <Row>
+            <Col lg="12" className="text-center">
+              <h2 className="section__title">Our Services</h2>
+            </Col> 
+            <ProductsList />
+          </Row>
+        </Container>
+      </section>
+      
 
-<Services />
-
-</Helmet>
-
-
-
-
-
-);
+    </Helmet>
+  );
   };
 
 
