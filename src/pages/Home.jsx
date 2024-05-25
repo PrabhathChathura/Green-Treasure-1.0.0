@@ -18,6 +18,8 @@ import "../styles/home.css";
 
 import ProductsList from "../components/UI/ProductsList";
 
+import Testimonials from "../Hero/Testimonials";
+
 
 const Home = () => {
   const year = new Date().getFullYear()
@@ -66,6 +68,24 @@ const Home = () => {
           </Row>
         </Container>
       </section>
+
+
+
+    <section className="Testimonial">
+        <Container>
+          <Row>
+            <Col lg="12" className="text-center">
+              <h2 className="section__title">Testimonials</h2>
+            </Col> 
+
+            <Testimonials/>
+            
+          </Row>
+        </Container>
+      </section>
+
+
+    
       
 
     </Helmet>

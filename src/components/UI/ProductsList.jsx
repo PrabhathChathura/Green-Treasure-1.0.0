@@ -26,23 +26,24 @@ const ProductList = () => {
         {
             image: armChairImg,
             title: "Recycling Programs",
-            description: "Comprehensive programs for paper, plastics, glass, and metals. Help reduce waste and promote sustainability."
+            description: "Our comprehensive recycling programs cover paper, plastics, glass, and metals. Join us in reducing waste and promoting sustainability for a greener future."
         },
         {
             image: armChairImg,
             title: "Waste Collection",
-            description: "Services for residential, commercial, and industrial clients. Timely and efficient waste management solutions."
+            description: "We offer reliable waste collection services for residential, commercial, and industrial clients. Let us provide you with timely and efficient waste management solutions to keep your environment clean."
         },
         {
             image: armChairImg,
             title: "Consulting Services",
-            description: "Expert advice to develop sustainable waste management strategies. Identify opportunities for waste reduction and recycling improvement."
+            description: "Get expert advice from our team to develop sustainable waste management strategies. We'll help you identify opportunities for waste reduction and recycling improvement to minimize environmental impact."
         },
         {
             image: armChairImg,
             title: "Waste Auditing",
-            description: "Expert auditing services to assess waste generation, composition, and disposal practices. Detailed analysis to identify areas for improvement and optimize waste management strategies."
+            description: "Our waste auditing services involve expert assessment of waste generation, composition, and disposal practices. Receive detailed analysis and actionable insights to optimize your waste management strategies."
         }
+        
     ];
 
     return (
