@@ -10,8 +10,8 @@ const year = new Date().getFullYear()
   return (
     <footer className="footer">
       <Container>
-        <Row>
-          <Col lg="4">
+      <Row className="justify-content-center">
+          <Col lg="4" className="mb-4" md="6">
             <div className="logo">
               <div>
               <h1 style={{ color: 'white' }}>Green Treasure</h1>
@@ -24,7 +24,7 @@ const year = new Date().getFullYear()
             </p>
           </Col>
 
-          <Col lg="3">
+          <Col lg="3" md="3" className="mb-4">
             <div className="footer__quick-links">
               <h4 className="quick__links__title">Useful Links</h4>
               <ListGroup>
@@ -50,7 +50,7 @@ const year = new Date().getFullYear()
             </div>
           </Col>
 
-          <Col lg="4">
+          <Col lg="3" md="4">
           <div className="footer__quick-links">
               <h4 className="quick__links__title">Contact</h4>
                <ListGroup className="footer__contact">
@@ -70,14 +70,14 @@ const year = new Date().getFullYear()
                 <ListGroupItem className="ps-0 border-0 d-flex 
                 align-items-center gap-2">
                 <span><i class="ri-mail-line"></i></span>
-                  <p>greentreasureLK@gmail.com</p>
+                  <p>GreentreasureLK@gmail.com</p>
                 </ListGroupItem>        
 
               </ListGroup>
             </div>
           </Col>
           <Col lg="12">
-            <p className="footer__copy-right">Copyright {year}</p>
+            <p className="footer__copyright">© Green Treasure. All rights reserved {year}</p>
           </Col>
         </Row>
       </Container>
