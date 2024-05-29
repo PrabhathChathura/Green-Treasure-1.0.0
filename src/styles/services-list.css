@@ -1,0 +1,40 @@
+
+.product__item {
+    cursor: pointer;
+}
+
+.product__img img {
+    width: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product__item:hover .product__img img {
+    transform: scale(0.9);
+}
+
+.product__info h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.product__info span {
+    font-size: 0.9rem;
+}
+
+.product__description {
+    margin-top: 10px; 
+}
+
+@media only screen and (max-width: 992px) {
+    .product__info h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .product__info h3 {
+        font-size: 1rem;
+    }
+}

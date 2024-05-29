@@ -16,7 +16,8 @@ import Hero from "../Hero/Hero";
 
 import "../styles/home.css";
 
-import ProductsList from "../components/UI/ProductsList";
+import ServicesList from "../components/UI/ServicesList";
+
 
 import Testimonials from "../Hero/Testimonials";
 
@@ -64,7 +65,7 @@ const Home = () => {
             <Col lg="12" className="text-center">
               <h2 className="section__title">Our Services</h2>
             </Col> 
-            <ProductsList />
+            <ServicesList />
           </Row>
         </Container>
       </section>
