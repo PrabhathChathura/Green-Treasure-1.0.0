@@ -10,13 +10,15 @@ import { cartActions } from "../../redux/slices/cartSlice";
 const ProductCard = ({ item }) => {
     const dispatch = useDispatch();
 
+
+
     const addToCart = () => {
         dispatch(
             cartActions.addItem({
                 id: item.id,
                 productName: item.productName,
                 price: item.price,
-                image: item.imgUrl,
+                imgUrl: item.imgUrl,
             })
         );
 
