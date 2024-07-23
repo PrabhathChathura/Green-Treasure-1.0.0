@@ -13,6 +13,7 @@ import ProtectedRoute from "./ProtectedRoute";
 
 import AddProducts from "../admin/AddProducts";
 import AllProducts from "../admin/AllProducts";
+import Dashboard from "../admin/Dashboard";
 
 
 
@@ -30,8 +31,9 @@ const Routers = () => {
     <Route path="/*" element={<ProtectedRoute/>}>
  
     <Route path="checkout" element={<Checkout/>}/>
+    <Route path="dashboard" element={<Dashboard />}/>
     <Route path="dashboard/all-products" element={<AllProducts/>}/>
-    <Route path="dashboard/ad-products" element={<AddProducts/>}/>
+    <Route path="dashboard/add-products" element={<AddProducts/>}/>
  
     </Route>
 
