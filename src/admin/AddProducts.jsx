@@ -40,7 +40,7 @@ try{
   }, ()=> {
     getDownloadURL(uploadTask.snapshot.ref).then(async(downloadURL)=>{
       await addDoc(docRef, {
-        title: enterTitle,
+        productName: enterTitle,
         shortDesc: enterShortDesc,
         description: enterDescription,
         category: enterCategory,
@@ -115,6 +115,7 @@ try{
             <span>Category</span>
             <select className="w-100 p-2"  value=
             {enterCategory} onChange={e=> setEnterCategory(e.target.value)}>
+              <option>Selecet category</option>
               <option value="plastic">Plastic</option>
               <option value="ewaste">E-waste</option>
               <option value="rubber">Rubber</option>

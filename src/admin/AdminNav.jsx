@@ -53,7 +53,7 @@ const { currentUser } = useAuth();
                     <div className="admin__nav-top-right">
                         <span> <i class="ri-notification-4-line"></i> </span>
                         <span> <i class="ri-settings-3-line"></i> </span>
-                        <img src={currentUser.photoURL} alt="profile" />
+                        <img src={currentUser && currentUser.photoURL} alt="profile" />
                     </div>
                 </div>
             </Container>

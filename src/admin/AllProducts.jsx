@@ -1,13 +1,24 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import { toast } from 'react-toastify';
 
-import productImg from '../assets/images/arm-chair-01.jpg';
+import { db } from '../firebase.config';
+import {doc, deleteDoc} from 'firebase/firestore';
 import useGetData from '../custom-hooks/useGetData';
 
 const AllProducts = () => {
 
     const {data:productsData, loading} = useGetData('products');
 
+    const deleteProduct = async (id) => {
+        try {
+            await deleteDoc(doc(db, 'products', id));
+            toast.success('Product deleted successfully');
+            // Optionally, refresh the data
+        } catch (error) {
+            toast.error('Failed to delete product');
+        }
+    };
      
     return ( 
     
@@ -29,8 +40,7 @@ const AllProducts = () => {
                     </thead>
                     <tbody>
                       
-                      {
-                        loading ? <h3>loading....</h3> :   productsData.map(item=>(
+                      {loading ? <h4 className='py-5 text-center fw-bold'>Loading....</h4> :   productsData.map(item=>(
                                 <tr key = {item.id}>
                                 <td><img src={item.imgUrl} alt=""/></td>
                                 <td>{item.title}</td>
@@ -38,7 +48,13 @@ const AllProducts = () => {
                                 <td>${item.price}</td>
                                 <td> 
                                     {}
-                                    <button className='btn btn-primary '>Delete</button>
+                                    <button
+                                     onClick={() =>{
+                                        deleteProduct(item.id);
+                                        }} 
+                                        className='btn btn-danger'>
+                                            Delete
+                                            </button>
                                      </td>
                             </tr>
 

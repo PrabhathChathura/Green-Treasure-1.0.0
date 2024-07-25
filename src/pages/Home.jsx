@@ -21,8 +21,14 @@ import ServicesList from "../components/UI/ServicesList";
 
 import Testimonials from "../Hero/Testimonials";
 
+import useGetData from "../custom-hooks/useGetData";
+
 
 const Home = () => {
+
+  const { data: products, loading } = useGetData('products');
+
+
   const year = new Date().getFullYear()
   return (
     <Helmet title={'Home'}>

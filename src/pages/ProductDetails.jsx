@@ -1,7 +1,6 @@
 import React,{useState, useRef, useEffect} from "react";
 import { Container, Row, Col } from "reactstrap";
 import { useParams } from "react-router-dom";
-import productsData from "../assets/data/products"; 
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
 import "../styles/product-details.css";
@@ -11,8 +10,14 @@ import{cartActions} from "../redux/slices/cartSlice";
 import {toast} from "react-toastify";
 
 
+import {db} from '../firebase.config';
+import {doc, getDoc} from 'firebase/firestore'
+import useGetData from "../custom-hooks/useGetData";
+
+
 const ProductDetails = () => {
 
+  const [product, setProduct] = useState({})
   const [tab,setTab]=useState("desc");
   const reviewUser = useRef('')
   const reviewMsg = useRef('')
@@ -21,7 +26,27 @@ const ProductDetails = () => {
 
   const [rating,setRating]=useState(null);
   const { id } = useParams();
-  const product = productsData.find(item => item.id === id); 
+
+  const {data: products} = useGetData("products")
+
+
+
+  const docRef = doc(db, 'products', id);
+
+  useEffect(async()=>{
+    const getProduct = async () => {
+      const docSnap = await getDoc(docRef);
+
+      if (docSnap.exists()){
+        setProduct(docSnap.data());
+      
+      }else{
+        console.log("No products are found!")
+      }
+    }
+
+    getProduct();
+  }, []);
 
   if (!product) {
     return <div>Product not found</div>; 
@@ -31,8 +56,8 @@ const ProductDetails = () => {
     imgUrl,
     productName, 
     price, 
-    avgRating, 
-    reviews, 
+    //avgRating, 
+    //reviews, 
     description,
     shortDesc,
     category
@@ -100,7 +125,7 @@ toast.success("Product added successfully");
                     <span><i class="ri-star-half-line"></i></span>
                   </div>
                   <p>
-                    (<span>{avgRating}</span> ratings)
+                    {/* (<span>{avgRating}</span> ratings) */}
                   </p>
                 </div>
 
@@ -135,7 +160,11 @@ toast.success("Product added successfully");
 
                   <h6 className={'${tab==="rev" ? "active__tab" : ""}'}
                   onClick={()=>setTab('rev')}>
-                    Reviews ({reviews.length})</h6>     
+                    
+                   Reviews 
+                  
+                  
+                  </h6>     
                 </div>
 
 
@@ -149,7 +178,7 @@ toast.success("Product added successfully");
                 ) : (
                    <div className="product__review mt-5">
                     <div className="review__wrapper">
-                      <ul>
+                      {/* <ul>
                         {
                           reviews ?.map((item, index)=>(
                             <li kew={index} className="mb-4" >
@@ -160,7 +189,7 @@ toast.success("Product added successfully");
                             </li>
                           ))
                         }
-                      </ul>
+                      </ul> */}
                       <div className="review__form">
                         <h4>Leave your experience</h4>
                         <form action=""onSubmit={submitHandler}>
