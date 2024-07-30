@@ -43,9 +43,9 @@ const AllProducts = () => {
                       {loading ? <h4 className='py-5 text-center fw-bold'>Loading....</h4> :   productsData.map(item=>(
                                 <tr key = {item.id}>
                                 <td><img src={item.imgUrl} alt=""/></td>
-                                <td>{item.title}</td>
+                                <td>{item.productName}</td>
                                 <td>{item.category}</td>
-                                <td>${item.price}</td>
+                                <td>Rs. {item.price}</td>
                                 <td> 
                                     {}
                                     <button

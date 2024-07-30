@@ -1,28 +1,28 @@
 const serviceData = [
   {
     icon: "ri-truck-line",
-    title: "Free Shipping",
-    subtitle: "Lorem ipsum dolor sit amet.",
-    bg: "#fdefe6",
+    title: "Fast Delivery",
+    subtitle: "Fast shipping, no extra fee.",
+    bg: "#183e4b",
   },
   {
     icon: "ri-refresh-line",
     title: "Easy Returns",
-    subtitle: "Lorem ipsum dolor sit amet.",
-    bg: "#ceebe9",
+    subtitle: "Simple returns, no hassle.",
+    bg: "#525e75",
   },
   {
     icon: "ri-secure-payment-line",
     title: "Secure Payment",
-    subtitle: "Lorem ipsum dolor sit amet.",
-    bg: "#e2f2b2",
+    subtitle: "Safe payments, fully secure.",
+    bg: "#78938a",
   },
   {
     icon: "ri-exchange-dollar-line",
     title: " Back Guarantee",
-    subtitle: "Lorem ipsum dolor sit amet.",
-    bg: "#d6e5fb",
+    subtitle: "Get full refunds if not satisfied.",
+    bg: "#92ba92",
   },
 ];
 
-export default serviceData;
+export default serviceData

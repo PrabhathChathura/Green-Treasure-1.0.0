@@ -1,7 +1,23 @@
-.billing__form .form__group input {
-    border: 1px solid var(--card-bg-02)
+/* Billing Form Styles */
+.billing__form .form__group {
+    margin-bottom: 20px;
 }
 
+.billing__form .form__group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--card-bg-02);
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    outline: none;
+}
+
+.billing__form .form__group input:focus {
+    border-color: #1A4D2E; /* Adjust color for focused state */
+}
+
+/* Checkout Cart Styles */
 .checkout__cart {
     padding: 20px;
     background: var(--primary-color);
@@ -9,13 +25,10 @@
     border-radius: 5px;
 }
 
-.checkout__cart h6,h4{
+.checkout__cart h6, .checkout__cart h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.checkout__cart h6{
     margin-bottom: 20px;
 }
 
@@ -24,26 +37,15 @@
     padding-top: 20px;
 }
 
-
-
-
-
-
-/*
-.buy___btn {
-    background-color: #fff;
-    border: none;
-    color: var(--primary-color); 
-    padding: 10px 20px;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+/* Ensuring correct spacing and alignment */
+.checkout__cart span {
+    display: inline-block;
+    margin-left: 10px;
 }
 
-.buy___btn:hover {
-    background-color: rgba(221, 221, 221, 0.253);
-    color: #fff;
-    
-}
+.B_title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
 
-*/
+}

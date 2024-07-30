@@ -18,6 +18,11 @@ const admin__nav = [
     },
 
     {
+        display: 'Add Product',
+        path: '/dashboard/add-product'
+      },
+
+    {
         display: 'Orders',
         path: '/dashboard/orders'
     },

@@ -1,12 +1,8 @@
-
 import { initializeApp } from "firebase/app";
-import {getAuth} from 'firebase/auth';
-import { getFirestore } from "firebase/firestore";
+import { getAuth } from 'firebase/auth';
+import { getFirestore, doc, getDoc } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
-
 import { getAnalytics } from "firebase/analytics";
-
-
 
 const firebaseConfig = {
   apiKey: "AIzaSyD1JDxm4Q5dOOEdg2QL4tLL0epZYi946Ng",
@@ -18,12 +14,19 @@ const firebaseConfig = {
   measurementId: "G-D58P87CNPW"
 };
 
-
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const db = getFirestore(app);
 export const storage = getStorage(app);
 
+export const checkAdminStatus = async (uid) => {
+  const userRef = doc(db, 'users', uid);
+  const userSnap = await getDoc(userRef);
+  if (userSnap.exists()) {
+    return userSnap.data().role === 'admin';
+  }
+  return false;
+};
 
 const analytics = getAnalytics(app);
 

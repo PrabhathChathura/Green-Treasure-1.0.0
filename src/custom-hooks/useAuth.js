@@ -1,32 +1,34 @@
-import {useState, useEffect} from "react";
+// src/custom-hooks/useAuth.js
+import { useState, useEffect } from "react";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from '../firebase.config'
+import { auth, checkAdminStatus } from '../firebase.config';
 
 const useAuth = () => {
+  const [currentUser, setCurrentUser] = useState(null);
+  const [isAdmin, setIsAdmin] = useState(false);
+  const [loading, setLoading] = useState(true);
 
-    const [currentUser, setCurrentUser] = useState({})
-
-    useEffect(()=>{
-        onAuthStateChanged(auth, (user)=>{
-            if(user){
-                setCurrentUser(user)
-            }
-
-            else{
-                setCurrentUser(null)
-            }
-
-
-        });
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      if (user) {
+        setCurrentUser(user);
+        const adminStatus = await checkAdminStatus(user.uid);
+        setIsAdmin(adminStatus);
+      } else {
+        setCurrentUser(null);
+        setIsAdmin(false);
+      }
+      setLoading(false);
     });
-    
 
+    return () => unsubscribe();
+  }, []);
 
-    return{
-
-        currentUser,
-
-    };
+  return {
+    currentUser,
+    isAdmin,
+    loading
+  };
 };
 
-export default useAuth
+export default useAuth;

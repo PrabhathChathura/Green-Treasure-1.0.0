@@ -46,14 +46,14 @@ const slideBackward = () => {
                             <div className="user-info">
                                 <img src= {user_1}/>
                                 <div>
-                                    <h3>Dr. Amila Jeewandara</h3>
-                                    <span>Senior Lecturer, University of Kelaniya</span>
+                                    <h3>Ms. Pabasari Hettige</h3>
+                                    <span>Demonstrator, University of Kelaniya</span>
                                 </div>
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem
-                                ipsum dolor sit amet, consectetur adipiscing elit.
+                            At Green Treasure, we believe that every piece 
+                            of waste is an opportunity
+                            to make a positive impact on our planet.
                             </p>
                         </div>
                     </li><li>
@@ -61,14 +61,14 @@ const slideBackward = () => {
                             <div className="user-info">
                                 <img src= {user_2}/>
                                 <div>
-                                    <h3>Dr. Chanaka Withana</h3>
+                                    <h3>Dr. Chanaka Withanage</h3>
                                     <span>Senior Lecturer, University of Kelaniya</span>
                                 </div>
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem
-                                ipsum dolor sit amet, consectetur adipiscing elit.
+                            At Green Treasure, we believe that every piece 
+                            of waste is an opportunity
+                            to make a positive impact on our planet.
                             </p>
                         </div>
                     </li><li>
@@ -76,14 +76,14 @@ const slideBackward = () => {
                             <div className="user-info">
                                 <img src= {user_3}/>
                                 <div>
-                                    <h3>Ms. Pabasari Hettige</h3>
-                                    <span>Demonstrator, University of Kelaniya</span>
+                                    <h3>Dr. Amila Jeewandara</h3>
+                                    <span>Senior Lecturer, University of Kelaniya</span>
                                 </div>
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem
-                                ipsum dolor sit amet, consectetur adipiscing elit.
+                            At Green Treasure, we believe that every piece 
+                            of waste is an opportunity
+                            to make a positive impact on our planet.
                             </p>
                         </div>
                     </li><li>
@@ -96,9 +96,9 @@ const slideBackward = () => {
                                 </div>
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem
-                                ipsum dolor sit amet, consectetur adipiscing elit.
+                            At Green Treasure, we believe that every piece 
+                            of waste is an opportunity
+                            to make a positive impact on our planet.
                             </p>
                         </div>
                     </li>

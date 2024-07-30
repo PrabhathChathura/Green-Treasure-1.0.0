@@ -13,26 +13,26 @@ const Hero = () => {
                             <div className="hero_stats">
                                 <div className="stat_box">
                                     <span className="stat_number">
-                                        <CountUp start={1400} end={1500} duration={4} />
+                                        <CountUp start={10} end={75} duration={7} />
                                         <p>+</p>
                                     </span>
-                                    <span className="stat_label">Brands</span>
+                                    <span className="stat_label">Waste Categories</span>
                                 </div>
 
                                 <div className="stat_box">
                                     <span className="stat_number">
-                                        <CountUp start={300} end={500} duration={4} />
+                                        <CountUp start={50} end={200} duration={7} />
                                         <p>+</p>
                                     </span>
-                                    <span className="stat_label">Outlets</span>
+                                    <span className="stat_label">Partner Organizations</span>
                                 </div>
 
                                 <div className="stat_box">
                                     <span className="stat_number">
-                                        <CountUp start={11400} end={12500} duration={4} />
+                                        <CountUp start={5000} end={10000} duration={7} />
                                         <p>+</p>
                                     </span>
-                                    <span className="stat_label">Customers</span>
+                                    <span className="stat_label">Kilograms Recycled Annually</span>
                                 </div>
                             </div>
                         </Col>

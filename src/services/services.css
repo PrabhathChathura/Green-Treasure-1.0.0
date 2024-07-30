@@ -18,15 +18,16 @@
 }
 
 .service__item h3 {
-    color: var(--primary-color);
+    color: white;
     font-size: 1.1rem;
     font-weight: 600;
+
 }
 
 .service__item p {
     font-style: 0.9em;
     margin-top: 5px;
-    color: #222;
+    color: white;
 }
 
 

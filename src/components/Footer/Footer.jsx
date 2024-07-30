@@ -18,9 +18,8 @@ const year = new Date().getFullYear()
               </div>
             </div>
             <p className="footer__text mt-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            At Green Treasure, we believe that every piece of waste is 
+            an opportunity to make a positive impact on our planet.
             </p>
           </Col>
 
@@ -30,7 +29,7 @@ const year = new Date().getFullYear()
               <ListGroup>
 
                 <ListGroupItem className="ps-0 border-0">
-                  <Link to="/shop">Shop</Link>
+                  <Link to="/home">Home</Link>
                 </ListGroupItem>
 
                 <ListGroupItem className="ps-0 border-0">

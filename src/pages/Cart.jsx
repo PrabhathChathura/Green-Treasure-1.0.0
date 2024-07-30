@@ -29,7 +29,7 @@ const totalAmount = useSelector((state) => state.cart.totalAmount);
 
              <table className="table bordered">
               <thead>
-                <tr>
+                <tr className="tr__heading">
                   <th>Image</th>
                   <th>Title</th>
                   <th>Price</th>
@@ -52,9 +52,9 @@ const totalAmount = useSelector((state) => state.cart.totalAmount);
           <Col lg='3'>
 
           <div>
-            <h6 className="d-flex align-items-center justify-content-between">
+            <h6 className="sub_total d-flex align-items-center justify-content-between">
               Subtotal
-              <span className="fs-4 fw-bold">${totalAmount}</span>
+              <span className="total_amount fs-4 fw-bold">Rs. {totalAmount}.00</span>
               </h6>
             
             </div>
@@ -63,9 +63,9 @@ const totalAmount = useSelector((state) => state.cart.totalAmount);
             </p>
             <div>
               
-              <button className="buy__btn w-100"><Link to='/checkout'> Checkout </Link></button>
+              <button className="buy__btnn w-100"><Link to='/checkout'> Checkout </Link></button>
                 
-              <button className="buy__btn w-100 mt-3"><Link to='/shop'> Continue Shopping </Link></button>
+              <button className="buy__btnn2 w-100 mt-3"><Link to='/shop'> Continue Shopping </Link></button>
  
 
             </div>
@@ -94,7 +94,7 @@ const Tr = ({item})=>{
   <tr>
   <td> <img src={item.imgUrl} alt=""/></td>
   <td>{item.productName}</td>
-  <td>${item.price}</td>
+  <td>Rs. {item.price}</td>
   <td>{item.quantity}px</td>
 
   <td><motion.i whileTap={{scale: 1.2}}

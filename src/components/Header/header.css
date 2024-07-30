@@ -18,12 +18,13 @@
 }
 
 .logo img{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+
 }
 
 .logo h1{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color);
 }
@@ -37,7 +38,7 @@
     
 
 .nav__item a {
-    color: var(--primary-color);
+    color: black;
     font-weight: 500;
     cursor: pointer;
 
@@ -47,12 +48,13 @@
     display: flex;
     align-items: center;
     column-gap: 1.2rem;
+
     
 }
 
 .nav__icons span i{
     font-size: 1.4rem;
-    color: var(--primary-color);
+    color: black;
     cursor: pointer;
 }
 
@@ -69,7 +71,7 @@
     width: 15px;
     height: 15px;
     content: "";
-    background: var(--primary-color);
+    background: black;
     color: #fff;
     border-radius: 50px;
     display: flex;
@@ -83,10 +85,11 @@
 
 
 .nav__icons .profile  img {
-    width: 30px;
-    height: 30px;
+    width: 38px;
+    height: 38px;
     cursor: pointer;
     border-radius: 50%;
+     border: 3px solid var(--primary-color);
 }
 
 .nav__icons .profile{
@@ -182,8 +185,8 @@
     }
 
     .logo img{
-        width: 1rem;
-        height: 1rem;
+        width: 3rem;
+        height: 3rem;
 
     }
 

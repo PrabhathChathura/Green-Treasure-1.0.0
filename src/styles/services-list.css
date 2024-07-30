@@ -1,4 +1,5 @@
 
+
 .product__item {
     cursor: pointer;
 }
@@ -18,6 +19,7 @@
     font-weight: 600;
     margin-top: 15px;
 }
+
 
 .product__info span {
     font-size: 0.9rem;

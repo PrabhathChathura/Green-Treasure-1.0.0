@@ -23,6 +23,8 @@ import Testimonials from "../Hero/Testimonials";
 
 import useGetData from "../custom-hooks/useGetData";
 
+import BrandSwiper from "../components/UI/BrandSwiper";
+
 
 const Home = () => {
 
@@ -37,13 +39,14 @@ const Home = () => {
           <Row>
             <Col lg="6" md="6">
               <div className="hero__content">
-                <p className="hero__subtitle"> Trending product in {year}</p>
+                <p className="hero__subtitle"> Top Waste Management Solution of {year}</p>
 
-                <h2>Make Your Interior More Minamalist & Modern </h2>
+                <h2>Unveiling Sustainability Through Gamification</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem 
-                  ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor
-                  sit amet, consectetur adipiscing elit</p>
+                <p>Welcome to Green Treasure, your premier waste management 
+                  service dedicated to preserving the environment while providing
+                  top-notch waste solutions. At Green Treasure, we believe that every piece 
+                  of waste is an opportunity to make a positive impact on our planet.</p>
 
                 <motion.button whileTap={{ scale: 1.2 }} className="buy__btn">
                   <Link to="/shop">SHOP NOW</Link>
@@ -82,7 +85,7 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="text-center">
-              <h2 className="section__title">Testimonials</h2>
+              <h2 className="section__titles">Testimonials</h2>
             </Col> 
 
             <Testimonials/>
@@ -92,7 +95,15 @@ const Home = () => {
       </section>
 
 
-    
+      <section className="brand-swiper-section">
+        <Container>
+          <Row>
+            <Col lg="12">
+              <BrandSwiper />
+            </Col>
+          </Row>
+        </Container>
+      </section>
       
 
     </Helmet>

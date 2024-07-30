@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import { motion } from 'framer-motion';
 import serviceData from "../assets/data/serviceData";
-import "./services.css"; // Importing the CSS file for Services component
+import "./services.css"; 
 
 const Services = () => {
   return (

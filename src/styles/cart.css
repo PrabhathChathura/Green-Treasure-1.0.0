@@ -9,5 +9,44 @@ td i {
 }
 
 td{
-    color: var(--primary-color)
+    color: black;
+}
+
+.tr__heading{
+    color: black;
+
+}
+
+
+.buy__btnn2{
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background: gray;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 40px;
+}
+
+.buy__btnn{
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 40px;
+}
+
+.buy__btn a:hover{
+    color: #fff;
+}
+.sub_total{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
 }
