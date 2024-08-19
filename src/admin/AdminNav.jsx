@@ -1,3 +1,4 @@
+
 import React from "react"; 
 import { Container, Row } from "reactstrap";
 
@@ -31,6 +32,12 @@ const admin__nav = [
         display: 'Users',
         path: '/dashboard/users'
     },
+
+    {
+        display: 'Operation',
+        path: '/dashboard/operation'
+    },
+    
 ]
 
 

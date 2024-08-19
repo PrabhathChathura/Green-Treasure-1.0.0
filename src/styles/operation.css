@@ -1,0 +1,44 @@
+/* src/styles/operation.css */
+.bin__box {
+    padding: 20px;
+    border-radius: 5px;
+    background: var(--card-bg-01);
+  }
+  
+  .bin__box h5 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .bin__box span {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  
+  .text-danger {
+    color: #dc3545 !important;
+  }
+  
+  .text-success {
+    color: #28a745 !important;
+  }
+
+  .bin__box {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 100%;
+  }
+  
+  .bin__box h5 {
+    font-size: 1rem;
+    margin-bottom: 75px;
+  }
+  
+  .bin__box span {
+    font-size: 1.3rem;
+  }

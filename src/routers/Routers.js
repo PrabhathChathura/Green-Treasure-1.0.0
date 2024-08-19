@@ -14,6 +14,7 @@ import AddProducts from '../admin/AddProducts';
 import AllProducts from '../admin/AllProducts';
 import Dashboard from '../admin/Dashboard';
 import Users from '../admin/Users';
+import Operation from '../admin/Operation';
 
 import CheckOutSuccess from '../components/CheckOutSuccess';
 import CheckOutFail from '../components/CheckOutFail.jsx';
@@ -38,6 +39,7 @@ const Routers = () => {
         <Route path='all-products' element={<AllProducts />} />
         <Route path='add-product' element={<AddProducts />} />
         <Route path='users' element={<Users />} />
+        <Route path='operation' element={<Operation />} /> 
       </Route>
       
       <Route path='login' element={<Login />} />
