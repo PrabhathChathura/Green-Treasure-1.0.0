@@ -54,8 +54,6 @@ git clone https://github.com/PrabhathChathura/Green-Treasure-1.0.0.git
 ```
 
 2. Navigate to the project directory
-```
-```
 
 3. Install dependencies
 ```
@@ -145,7 +143,7 @@ SOFTWARE.
 ## 📞 Contact
 - **Name:** Prabhath
 - **Linkedin:** https://www.linkedin.com/in/prabhath-abeywickrama-334993266/
-- **Project Repository:** https://github.com/PrabhathChathura/Green-Treasure-1.0.0.git
+- **Clone Project Repository:** https://github.com/PrabhathChathura/Green-Treasure-1.0.0.git
 
 ## 🌍 Project Mission
 Green Treasure is committed to promoting circular economy principles by providing a seamless platform for businesses to trade and recycle materials, reducing waste and environmental impact.
