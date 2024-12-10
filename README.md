@@ -6,14 +6,33 @@ The B2B Marketplace for Recycled Materials is a dynamic e-commerce web applicati
 
 ## 🖼 Project Screenshots
 
-### Main Dashboard
-![Main Dashboard](screenshots/dashboard.png)
+### Hero page
+![Main Dashboard](https://github.com/PrabhathChathura/Green-Treasure-1.0.0/blob/e87bf141b6bd5524b71dfaf24d1cd042cad32895/Screen%20shots/Screenshot%202024-12-07%20232105.png)
 
-### Admin Panel
-![Admin Panel](screenshots/admin-panel.png)
+![Main Dashboard](https://github.com/PrabhathChathura/Green-Treasure-1.0.0/blob/e87bf141b6bd5524b71dfaf24d1cd042cad32895/Screen%20shots/Screenshot%202024-12-07%20232130.png)
+
+![Main Dashboard](https://github.com/PrabhathChathura/Green-Treasure-1.0.0/blob/e87bf141b6bd5524b71dfaf24d1cd042cad32895/Screen%20shots/Screenshot%202024-12-07%20232220.png)
+
+![Main Dashboard](https://github.com/PrabhathChathura/Green-Treasure-1.0.0/blob/e87bf141b6bd5524b71dfaf24d1cd042cad32895/Screen%20shots/Screenshot%202024-12-07%20233034.png)
+
 
 ### Product Page
-![Product Page](screenshots/product-page.png)
+![Product Page](https://github.com/PrabhathChathura/Green-Treasure-1.0.0/blob/e87bf141b6bd5524b71dfaf24d1cd042cad32895/Screen%20shots/Screenshot%202024-12-07%20232656.png)
+
+![Product Page](https://github.com/PrabhathChathura/Green-Treasure-1.0.0/blob/e87bf141b6bd5524b71dfaf24d1cd042cad32895/Screen%20shots/Screenshot%202024-12-07%20233918.png)
+
+![Product Page](https://github.com/PrabhathChathura/Green-Treasure-1.0.0/blob/e87bf141b6bd5524b71dfaf24d1cd042cad32895/Screen%20shots/Screenshot%202024-12-07%20234013.png)
+
+
+### Admin Panel
+![Admin Panel](https://github.com/PrabhathChathura/Green-Treasure-1.0.0/blob/e87bf141b6bd5524b71dfaf24d1cd042cad32895/Screen%20shots/Screenshot%202024-12-07%20234054.png)
+
+![Admin Panel](https://github.com/PrabhathChathura/Green-Treasure-1.0.0/blob/e87bf141b6bd5524b71dfaf24d1cd042cad32895/Screen%20shots/Screenshot%202024-12-07%20234107.png)
+
+![Admin Panel](https://github.com/PrabhathChathura/Green-Treasure-1.0.0/blob/e87bf141b6bd5524b71dfaf24d1cd042cad32895/Screen%20shots/Screenshot%202024-12-07%20234122.png)
+
+![Admin Panel](https://github.com/PrabhathChathura/Green-Treasure-1.0.0/blob/e87bf141b6bd5524b71dfaf24d1cd042cad32895/Screen%20shots/Screenshot%202024-12-07%20234138.png)
+
 
 ### 🌟 Key Features
 - **Dynamic Product Listings:** View and manage available recycled materials
