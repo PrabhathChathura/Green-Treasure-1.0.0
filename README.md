@@ -1,73 +1,135 @@
-# Getting Started with Create React App
+# Green Treasure 1.0.0 🌿♻️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📋 Project Overview
 
-## Available Scripts
+The B2B Marketplace for Recycled Materials is a dynamic e-commerce web application that facilitates the seamless exchange of recycled materials between businesses. Built with React and Firebase, this platform aims to promote sustainability and simplify waste recycling through a modern, user-friendly interface.
 
-In the project directory, you can run:
+## 🖼 Project Screenshots
 
-### `npm start`
+### Main Dashboard
+![Main Dashboard](screenshots/dashboard.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Admin Panel
+![Admin Panel](screenshots/admin-panel.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Product Page
+![Product Page](screenshots/product-page.png)
 
-### `npm test`
+### 🌟 Key Features
+- **Dynamic Product Listings:** View and manage available recycled materials
+- **Admin Panel:** Add and update products easily through an intuitive dashboard
+- **Firebase Integration:** Real-time data updates for product inventory and user activity
+- **Payment Gateway:** Stripe payment integration for secure transactions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting Started
 
-### `npm run build`
+### Prerequisites
+- Node.js (v14 or later)
+- npm (v6 or later)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository
+```
+git clone https://github.com/PrabhathChathura/Green-Treasure-1.0.0.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navigate to the project directory
+```
+```
 
-### `npm run eject`
+3. Install dependencies
+```
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🔧 Available Scripts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Development
+```
+npm start
+```
+- Runs the app in development mode
+- Open [http://localhost:3000](http://localhost:3000) to view in browser
+- Automatically reloads on changes
+- Displays lint errors in console
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Testing
+```
+npm test
+```
+- Launches test runner in interactive watch mode
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Production Build
+```
+npm run build
+```
+- Builds app for production in `build` folder
+- Optimizes and minifies files for best performance
 
-## Learn More
+## 🛠 Core Technologies & Dependencies
+- React
+- Firebase
+  - Firestore
+  - Realtime Database
+  - Authentication
+- React Router DOM
+- Stripe Payment Gateway
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Hosting
+- Platform: Firebase Hosting
 
-### Code Splitting
+### Deployment Steps
+1. Build the project
+```
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Deploy to Firebase
+```
+firebase deploy
+```
 
-### Analyzing the Bundle Size
+3. Configure environment variables in Firebase
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📖 Learn More
+- [React Documentation](https://reactjs.org/)
+- [Firebase Documentation](https://firebase.google.com/docs)
+- [Stripe Documentation](https://stripe.com/docs)
 
-### Making a Progressive Web App
+## 📜 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### MIT License
 
-### Advanced Configuration
+Copyright (c) 2024 Green Treasure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-### Deployment
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-### `npm run build` fails to minify
+## 📞 Contact
+- **Name:** Prabhath
+- **Linkedin:** https://www.linkedin.com/in/prabhath-abeywickrama-334993266/
+- **Project Repository:** https://github.com/PrabhathChathura/Green-Treasure-1.0.0.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🌍 Project Mission
+Green Treasure is committed to promoting circular economy principles by providing a seamless platform for businesses to trade and recycle materials, reducing waste and environmental impact.
 
 
-npm install firebase
+
