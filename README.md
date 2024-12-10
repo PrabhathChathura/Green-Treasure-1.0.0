@@ -1,8 +1,16 @@
 # Green Treasure 1.0.0 🌿♻️
 
+## 📋 Green-Treasure Smart Bin Prototype
+
+An automated system for sorting and monitoring waste using servo motors, barcode scanners, ultrasonic sensors, and a cam module. Powered by the ESP32 microcontroller, barcoded trash can be efficiently recycled through this innovative solution.
+
+https://github.com/user-attachments/assets/db2ce042-c461-444f-bb7b-9a4c12bfd948
+
+
 ## 📋 Project Overview
 
-The B2B Marketplace for Recycled Materials is a dynamic e-commerce web application that facilitates the seamless exchange of recycled materials between businesses. Built with React and Firebase, this platform aims to promote sustainability and simplify waste recycling through a modern, user-friendly interface.
+The B2B Marketplace for GreenTreasure is a dynamic e-commerce web application that facilitates the seamless exchange of recycled materials between businesses. Built with React and Firebase, this platform aims to promote sustainability and simplify waste recycling through a modern, user-friendly interface.
+
 
 ## 🖼 Project Screenshots
 
